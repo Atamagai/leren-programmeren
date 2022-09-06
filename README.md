@@ -1,1 +1,1 @@
-#Rijs
+#Rijst
