@@ -3,9 +3,10 @@ prijs_croissantje = 0.39
 stokbroden = 2
 prijs_stokbroden = 2.78 
 totale_kortingsbonen = 3 
-gebruikte_bonen = 0
+gebruikte_bonen = 0 
+bonkorting = 0.50
 
-totale_prijs = croissantjes * prijs_croissantje + stokbroden * prijs_stokbroden - gebruikte_bonen
+totale_prijs = croissantjes * prijs_croissantje + stokbroden * prijs_stokbroden - gebruikte_bonen * bonkorting
 float = totale_prijs
 format_float = "{:.2f}".format(float)
 

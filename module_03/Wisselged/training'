@@ -1,0 +1,22 @@
+
+toPay = int(float(input('Amount to pay: '))* 100) #
+paid = int(float(input('Paid amount: ')) * 100) #
+change = paid - toPay #
+
+rem = (toPay - paid) // 100
+vijf = 500
+drie = 300
+twee = 200
+
+if paid < toPay:
+    print("The paid amount is not enough, you still have to pay: " + str(rem)) 
+if change > 0: #
+  coinValue = 50 #
+  
+  while change > 0 and coinValue > 0: #
+    nrCoins = change // coinValue #
+
+    if nrCoins > 0: #
+      print('return maximal ', nrCoins, ' coins of ', coinValue, ' cents!' ) #
+      nrCoinsReturned = int(input('How many coins of ' + str(coinValue) +  ' cents did you return? ')) #
+      change -= nrCoinsReturned * coinValue #
