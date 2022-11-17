@@ -17,19 +17,21 @@ while repeat1 == True:
 
     while repeat == True:
         print(getal)
-        geraden_getal = input("Raad het nummer: ")
-        x = x + 1 
+         
     
         try:
-            int(geraden_getal)
+            geraden_getal = int(input("Raad het nummer: "))
+            x = x + 1
+            geraden_getal
             repeat = False
-            roundtwintig = int(geraden_getal) - int(getal)
+            roundtwintig = geraden_getal - getal
 
             if int(geraden_getal) > 1000 :
                 repeat = True
                 print("Het getal moet tussen 1 en 1000 zijn!")
 
-            elif int(geraden_getal) > getal:
+            # ingevoerde getal is lager
+            elif geraden_getal > getal:
                 print("Lager!")
                 repeat = True
                 if abs(int(roundtwintig)) <= 20:
@@ -40,7 +42,7 @@ while repeat1 == True:
                     print("Je bent warm!")
                     repeat = True
                 
-            elif int(geraden_getal) < getal:
+            elif geraden_getal < getal:
                 print("Hoger!")
                 repeat = True
                 if abs(int(roundtwintig)) <= 20:
@@ -50,7 +52,7 @@ while repeat1 == True:
                     print("Je bent warm!")
                     repeat = True
             
-            elif int(geraden_getal) == getal:
+            elif geraden_getal == getal:
                 score = score + 1 
                 print("Dat is juist!\n" +"Jouw score : "+ str(score))
                 opnieuw = input("Nog een getal raden? [Ja/Nee]\n").lower()
@@ -72,7 +74,7 @@ while repeat1 == True:
                 opnieuw = input("Nog een getal raden? [Ja/Nee]\n").lower()
                 if opnieuw == "ja":
                     repeat1 = True
-                    if int(ronde) == 3:
+                    if int(ronde) == 20:
                         print("Helaas zijn je ronde's voorbij\nGame Over!\n" + "Jouw score: " + str(score))
                         quit()
     
