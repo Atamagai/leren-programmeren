@@ -16,9 +16,7 @@ while repeat1 == True:
     repeat = True
 
     while repeat == True:
-        print(getal)
-         
-    
+             
         try:
             geraden_getal = int(input("Raad het nummer: "))
             x = x + 1
