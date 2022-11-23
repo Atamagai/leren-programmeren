@@ -17,4 +17,4 @@ random.shuffle(MyDeck)
 for d in range (7):
     print(MyDeck[d])
 
-print(MyDeck[7:54])
+print(MyDeck[7:54]) 
