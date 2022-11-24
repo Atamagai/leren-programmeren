@@ -37,4 +37,4 @@ while repeat == True:
                 bruin = bruin + 1 
                 zakje["bruin"] = bruin
 
-print(zakje)
+print(zakje())
