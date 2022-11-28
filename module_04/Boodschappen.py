@@ -1,8 +1,5 @@
 print("Welkom")
 lijst = {}
-
-
-
 repeat = True
 
 while repeat == True:
