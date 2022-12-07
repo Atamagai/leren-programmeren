@@ -37,4 +37,10 @@ while repeat == True:
                 bruin = bruin + 1 
                 zakje["bruin"] = bruin
 
-print(zakje())
+            # if kleur in zakje:
+            #     zakje[kleur] = zakje[kleur] + aantal
+            # else:
+            #     zakje[kleur] = aantal
+
+
+print(zakje)

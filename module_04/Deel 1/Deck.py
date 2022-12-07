@@ -1,11 +1,11 @@
 import random
 import itertools
 
-Kleuren = ("harten", "klaveren", "schoppen", "ruiten")
-nummer = ("2", "3", "4","5","6","7","8","9","10","Boer", "Vrouw", "Heer", "Asas",)
+Kleuren = ("harten", "klaveren", "schoppen",)
+nummer = ("2", "3", "4","5","6","7","8","9","10","Boer", "Vrouw", "Heer", "Aas",)
 MyDeck = []
 
-for i in range (4):
+for i in range (len(Kleuren)):
     for y in range (13): 
         MyDeck.append((Kleuren[i])+ " " + (nummer[y]))
 
@@ -16,5 +16,8 @@ random.shuffle(MyDeck)
 
 for d in range (7):
     print(MyDeck[d])
+    MyDeck.pop()
 
-print(MyDeck[7:54]) 
+# print(MyDeck[7:54]) 
+print(MyDeck)
+print(len(MyDeck))
