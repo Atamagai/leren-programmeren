@@ -1,12 +1,8 @@
-from random import random
-from random import choice
+import random
 from fruitmand import fruitmand
 
 getal = int(input("Voer een getal in: "))
 
-
-list(fruitmand)
-
 i = random.choice(fruitmand)
-
-print(i)
+for x in range (getal):
+    print(i["name"])
