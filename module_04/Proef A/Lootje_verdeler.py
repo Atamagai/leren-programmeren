@@ -25,27 +25,16 @@ while repeat == True:
                 repeat = False
 
             else:
-                print("aantal namen kleiner dan 3")
                 print ("je moet minimaal 3 namen invoeren\nvoer a.u.b meer namen in")
                 repeat = True
 
 
-lootjes = namen.copy() 
-random.shuffle(lootjes)
-repeat1 = True
+random.shuffle(namen)
+x = 0
 
-uitslag = {} 
+print("Hier is je lijst met lootjes:\n")
 
-while repeat1 == True: 
-    for x in namen:
-        uitslag[x] = lootjes.pop(0)
-        repeat1 = False
-
-    for i in uitslag:
-        if uitslag[i] == i: 
-            repeat1 = True
-
-print (uitslag)
-
-
-    
+for i in range (len(namen)-1):
+    print("'" + namen[x] + "'" + " heeft " + "'" + namen[x + 1] + "'")
+    x = x + 1
+print("'" + namen[-1] + "'" + " heeft " + "'" + namen[0] + "'")
